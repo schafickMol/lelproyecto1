@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e65c00;
+}
+
+header{
+    position: relative;
+    padding: 1rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.header1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #98c8ff, #6883ff, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #98c8ff, #6883ff, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 60px;
+}
+
+.contenedor-textos{
+    width: 50%;
+    color: #fff;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 55px;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+}
+
+img{
+    width: 40%;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.header2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 60px;
+}
+
+.contenedor-textos2{
+    width: 50%;
+    color: #000000;
+}
+
+.tit2{
+    font-weight: 500;
+    font-size: 55px;
+}
+
+.p2{
+    color: rgb(0, 0, 0);
+}
+
+img{
+    width: 40%;
+}
+
+.wave2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.header3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 60px;
+}
+
+.contenedor-textos3{
+    width: 50%;
+    color: #ffffff;
+}
+
+.tit3{
+    font-weight: 500;
+    font-size: 55px;
+}
+
+.p3{
+    color: rgb(255, 255, 255);
+}
+
+img{
+    width: 40%;
+}
+
+.wave3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+footer{
+    background-color: #000000;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nonedisc;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerbottom{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (min-width: 1024px){
+    .navbar .logo a{
+        font-size: 1.6rem;
+    }
+
+    .navbar .links a{
+        font-size: 1.4rem;
+    }
+
+    h1{
+        font-size: 2.7rem;
+    }
+
+    .tit2{
+        font-size: 2.7rem;
+    }
+
+    .tit3{
+        font-size: 2.7rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+
+    .footerNav ul li a{
+        font-size: 1.8rem;
+    }
+
+    .footerbottom p{
+        font-size: 1.2rem;
+    }
+
+    .footerbottom p span{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar .logo a{
+        font-size: 1.0rem;
+    }
+
+    .navbar .links a{
+        font-size: 0.8rem;
+    }
+
+    h1{
+        font-size: 2.0rem;
+    }
+
+    .tit2{
+        font-size: 2.0rem;
+    }
+
+    .tit3{
+        font-size: 2.0rem;
+    }
+
+    h3{
+        font-size: 1.0rem;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .footerNav ul li a{
+        font-size: 1.1rem;
+    }
+
+    .footerbottom p{
+        font-size: 0.6rem;
+    }
+
+    .footerbottom p span{
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width: 500px){
+    .navbar .logo a{
+        font-size: 0.8rem;
+    }
+
+    .navbar .links a{
+        font-size: 0.6rem;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    .tit2{
+        font-size: 1.7rem;
+    }
+
+    .tit3{
+        font-size: 1.7rem;
+    }
+
+    h3{
+        font-size: 0.9rem;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .footerNav ul li a{
+        font-size: 1.0rem;
+    }
+
+    .footerbottom p{
+        font-size: 0.6rem;
+    }
+
+    .footerbottom p span{
+        font-size: 0.6rem;
+    }
+}
